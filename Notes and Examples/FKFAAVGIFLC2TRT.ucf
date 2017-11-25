@@ -1,0 +1,16 @@
+NET "PS2_CLK" LOC = "B1";
+NET "PS2_DATA" LOC = "C3";
+
+//NET "PS2_CLK" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "CLK" LOC = "B8";
+
+NET "LED<0>" LOC = "M5";
+NET "LED<1>" LOC = "M11";
+NET "LED<2>" LOC = "P7";
+NET "LED<3>" LOC = "P6";
+
+NET "LED<4>" LOC = "N5";
+NET "LED<5>" LOC = "N4";
+NET "LED<6>" LOC = "P4";
+NET "LED<7>" LOC = "G1";
