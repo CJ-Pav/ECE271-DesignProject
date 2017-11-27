@@ -11,14 +11,14 @@ module decoder(
 	always_comb
 		case (input)
 			0: outData = ~'b01000101;
-			1: outData = ~'b;
-			2: outData = ~'b;
-			3: outData = ~'b;
-			4: outData = ~'b;
-			5: outData = ~'b;
-			6: outData = ~'b;
-			7: outData = ~'b;
-			8: outData = ~'b;
-			9: outData = ~'b;
+			1: outData = ~'b00010110;
+			2: outData = ~'b00011110;
+			3: outData = ~'b00100110;
+			4: outData = ~'b00100101;
+			5: outData = ~'b00101110;
+			6: outData = ~'b00110110;
+			7: outData = ~'b00111101;
+			8: outData = ~'b00111110;
+			9: outData = ~'b01000110;
 		endcase
 endmodule
