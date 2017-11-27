@@ -1,7 +1,8 @@
 // decoder module
 // the binary values were converted from the hex scan codes posted 
 //      in ECE271-DesignProject/Notes and Examples/PS2_Keyboard/ScanCodes.pdf
-// this reads in a case (0 through 1 on keyboard) and 
+// this reads in a case (0 through 1 on keyboard) and sets outData
+//      to the important 8-bit portion of the input
 
 module decoder(
 	input logic [11:0] inData, //inputs
