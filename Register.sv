@@ -21,7 +21,7 @@ module register(
         end
 
         if(reg == 'b0ddddddddd1) begin      //check for start and stop bits
-            reg[sysCount] <= inData;
+            reg[sysCount] <= inData;        //this line will probably not work
         end
 
         if(regReset) begin                  //if reset is set
