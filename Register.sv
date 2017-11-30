@@ -1,16 +1,18 @@
 module register(
-    input logic inData,             //data line from ps2 keyboard
-    input logic inKeyClk,           //clock line from ps2 keyboard
-    input logic regReset,           //set to 1 every 11 ticks
-    input logic sysCount,           //tracks clock ticks
-    input logic sysClock,           //clock running state machine
-    output logic [10:0] outData,    //bus to decoder
-	output logic outKeyClk          //clock to keyboard
+input logic regInData,                   //data line from ps2 keyboard
+    input logic inKeyClk,                //clock line from ps2 keyboard
+    input logic regReset,                //set to 1 every 11 ticks
+    input logic sysCount,                //tracks clock ticks
+    input logic sysClock,            //clock running state machine
+    output logic [10:0] regOutData,     //bus to decoder
+	output logic outKeyClk              //clock to keyboard
 	);
 
     reg [10:0] rawData;
 
     count = 0;
+
+    
 
     always_ff@(posedge inKeyClk) begin      //keyboard clock line drives the module
         sysCount <= sysCount + 1;           //count += 1

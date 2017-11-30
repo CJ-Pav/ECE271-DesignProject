@@ -1,5 +1,5 @@
 module DigitSeparator(
- input logic [7:0] displayValue, //
+ input logic [8:0] displayValue, //
  output logic [3:0] thousands,     //the MSB digit
  output logic [3:0] hundreds,      //the 100's digit
  output logic [3:0] tens,          //the 10's digit

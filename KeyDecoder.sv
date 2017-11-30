@@ -7,22 +7,21 @@
 //		next state on a key input (will be one of these next inputs on each board)
 // will have to write state logic, for the most part this should just be a mux (case(state))
 
-module decoder(
-	input logic [11:0] inData, //raw keyboard data
-	output logic [8:0] outData, //display value for parser
+module KeyDecoder(
+	input logic [10:0] keyDecInData, //raw keyboard data
+	output logic [8:0] keyDecOutData, //display value for parser
 	);
 	
 	always_comb
-		case (inData)
-			'b00001011001: outData = 'b00000001; //Key1 -> play
-			'b00001111011: outData = 'b00000010; //Key2 -> pause
-			'b00010011001: outData = 'b00011100; //Key3 -> 28 Hz
-			'b00010010101: outData = 'b00011111; //Key4 -> 31 Hz
-			'b00010111011: outData = 'b00100001; //Key5 -> 33 Hz
-			'b00011011011: outData = 'b00100101; //Key6 -> 37 Hz
-			'b00011110101: outData = 'b00101001; //Key7 -> 42 Hz
-			'b00011111001: outData = 'b00101100; //Key8 -> 44 Hz
-			'b00100011001: outData = 'b00110001; //Key9 -> 49 Hz
-			'b00100010101: outData = 'b00000000; //Key0 -> NextState (tells FSM to use next board)
+		case (keyDecInData)
+			'b00001011001: keyDecOutData = 'b000000001; //Key1
+			'b00001111011: keyDecOutData = 'b000000010; //Key2
+			'b00010011001: keyDecOutData = 'b000000100; //Key3 
+			'b00010010101: keyDecOutData = 'b000001000; //Key4
+			'b00010111011: keyDecOutData = 'b000010000; //Key5
+			'b00011011011: keyDecOutData = 'b000100000; //Key6
+			'b00011110101: keyDecOutData = 'b001000000; //Key7
+			'b00011111001: keyDecOutData = 'b010000000; //Key8
+			'b00100011001: keyDecOutData = 'b100000000; //Key9
 		endcase
 endmoduled
