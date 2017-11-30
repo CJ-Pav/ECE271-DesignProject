@@ -7,6 +7,6 @@ module topModule (
     output logic [6:0] segments
     );
 
-    // its 3 am... im going to bed
+    
 
 endmodule
