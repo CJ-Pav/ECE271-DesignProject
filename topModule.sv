@@ -74,7 +74,7 @@ All internal variables:
 	);								//Leaves SEDSTDBY pin unconnected
 //------------------------------------------------------------------------//	
 	//logic [10:0] regOutData;
-	register reg (
+	register r (
 		.regInData(ps2Data),    
 		.clk(keyClk2),        
 		.sysReset(regReset),     
@@ -83,9 +83,9 @@ All internal variables:
 //------------------------------------------------------------------------//	
 	//logic [8:0] keyDecOutData;
 	KeyDecoder KD (
-	.keyDecInData(regOutData),
-	.keyDecOutData(keyDecOutData) //output
-);
+		.keyDecInData(regOutData),
+		.keyDecOutData(keyDecOutData) //output
+	);
 
 //------------------------------------------------------------------------//
 	//logic [8:0] buttons;
@@ -97,9 +97,9 @@ All internal variables:
 	//logic whichFreqOut;
 	//logic [8:0] dataOut_fm;
 	freqMux fm (
-		.keyFreqIn(keyDecOutData),
-		.bbFreqIn(buttons),
-		.dataOut(dataOut_fm),
+		.keyFreqIn_fm(keyDecOutData),
+		.bbFreqIn_fm(buttons),
+		.dataOut_fm(dataOut_fm),
 		.whichFreqOut(whichFreqOut)
 	);
 		
@@ -110,7 +110,7 @@ All internal variables:
 		.reset(signalGeneratorReset),
 		.clk(oscClk), //2.08 MHz CLK
 		.signal(signal)
-	)
+	);
 	
 //------------------------------------------------------------------------//
     //logic [8:0] keys;
@@ -123,7 +123,7 @@ All internal variables:
 //------------------------------------------------------------------------// 
 	//logic [8:0] buttonFreq;
 	bLUT2 b2(
-		.buttonBoard(buttonBoard),
+		.buttons(buttonBoard),
 		.buttonFreq(buttonFreq)
 	);
 	
@@ -131,8 +131,8 @@ All internal variables:
 	//logic whichBoard;
 	//logic [8:0] dataOut_bm;
 	boardMux bm (
-		.keyFreqIn_bm(keyFreq),
-		.bbFreqIn_bm(buttonFreq),
+		.keyFreq_bm(keyFreq),
+		.bbFreq_bm(buttonFreq),
 		.dataOut_bm(dataOut_bm),
 		.whichBoard(whichBoard)
 	);
