@@ -1,5 +1,7 @@
 # ECE271-DesignProject
 
+IMPORTANT NOTE: We are adding an extra "reset" key input to the FPGA for flushing inputs
+
 Group members: I am placing all useful reference files and examples in a "Notes and Examples" folder. Feel free to add to this or use it for your work.
 
 [Update by Chris]

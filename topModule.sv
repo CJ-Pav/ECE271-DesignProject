@@ -1,4 +1,5 @@
 //the God module 
+
 module topModule (
 	reg ps2Data;
 	input logic [1:0] keyClk, // come back to it	
@@ -20,8 +21,9 @@ module topModule (
 	logic [8:0] keys;
 	logic [7:0] signal;
 
-	//decoder2 internal logics 
-    logic [8:0] ???;
+	//key LUT internal logics 
+    input logic [8:0] keys;
+	output logic [8:0] keyFreq;
 
 sync clkSync (
 	
