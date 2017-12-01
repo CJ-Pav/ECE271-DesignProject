@@ -9,7 +9,7 @@
 
 module KeyDecoder(
 	input logic [10:0] keyDecInData, //raw keyboard data
-	output logic [8:0] keyDecOutData, //display value for parser
+	output logic [8:0] keyDecOutData //display value for parser
 	);
 	
 	always_comb
@@ -24,4 +24,5 @@ module KeyDecoder(
 			'b00011111001: keyDecOutData = 'b010000000; //Key8
 			'b00100011001: keyDecOutData = 'b100000000; //Key9
 		endcase
-endmoduled
+
+endmodule
