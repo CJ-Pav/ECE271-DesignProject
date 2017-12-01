@@ -1,10 +1,12 @@
+// button look up table #1
+
 module bLUT1(
     input logic [7:0] buttonBoard,
     output logic [8:0] buttons
     )
 
     always_comb
-        case (keyDecInData)
+        case (buttonBoard)
 			'b00000001: buttons = 'b000000001; //Key1
 			'b00000010: buttons = 'b000000010; //Key2
 			'b00000011: buttons = 'b000000011; //Key3 
