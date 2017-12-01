@@ -52,7 +52,7 @@ All internal variables:
 	//logic keyClk2;
 	//logic regReset;
 	sync clkSync (
-		.reset(regReset), //output
+		.regReset(regReset), //output
 		.keyClk2(keyClk2), //output 
 		.keyClk1(keyClk), 
 		.sysClk(clkValue)
@@ -105,11 +105,10 @@ All internal variables:
 		
 //------------------------------------------------------------------------//
 	//logic signalGeneratorReset;
-	//logic signalGeneratorClk;
 	signalgenerator sg(
 		.keys(dataOut_fm),
 		.reset(signalGeneratorReset),
-		.clk(signalGeneratorClk),
+		.clk(oscClk), //2.08 MHz CLK
 		.signal(signal)
 	)
 	
