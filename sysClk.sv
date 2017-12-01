@@ -2,7 +2,6 @@
 
 module sysClk(
     output logic clkValue,
-    output logic [9:0] count;
     input logic reset
     );
     
