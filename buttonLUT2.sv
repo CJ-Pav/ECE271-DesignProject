@@ -1,4 +1,6 @@
 // button look up table #2
+// input: buttonBoard output
+// output: frequency description
 
 module bLUT2(
     input logic [7:0] buttonBoard,

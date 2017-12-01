@@ -1,4 +1,6 @@
 // button look up table #1
+// input: buttonBoard output
+// output: binary button description
 
 module bLUT1(
     input logic [7:0] buttonBoard,
@@ -17,4 +19,4 @@ module bLUT1(
 			'b00001000: buttons = 'b000001000; //Key8
 			'b10000000: buttons = 'b000001001; //Key9 (pause)
 		endcase
-endmoduled
+endmodule

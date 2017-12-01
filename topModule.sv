@@ -23,7 +23,7 @@ module topModule (
 	//decoder2 internal logics 
     logic [8:0] ???;
 
-keyClkMod (
+sync clkSync (
 	
 );
 

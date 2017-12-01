@@ -4,8 +4,10 @@ input logic regInData,                      //data line from ps2 keyboard
     input logic regReset,                   //set to 1 every 11 ticks
     input logic sysCount,                   //tracks clock ticks
     output logic [10:0] regOutData,         //bus to decoder
+    otuput logic sysReset                   //sends reset to 
 	);
 
+    logic sysCount
     reg [10:0] rawData;
 
     count = 0;
@@ -19,7 +21,9 @@ input logic regInData,                      //data line from ps2 keyboard
         end
 
         if(reg == 'b0ddddddddd1) begin      //check for start and stop bits
-            rawData[sysCount] <= regInData; //fill register with 
+            rawData <=
+            rawData[0] <= regInData;        //pass data to first bit of register
+
         end
 
         if(regReset) begin                  //if reset is set

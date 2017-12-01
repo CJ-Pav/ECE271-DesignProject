@@ -14,15 +14,5 @@ module sysClk(
         .STDBY(1'b0),
         .OSC(clk),
         .SEDSTDBY());
-    
-    always_ff@(posedge clk) begin
-        if(reset) begin
-            count <= 0;
-        end
-        else begin
-            count <= count + 1;
-        end
-        reset <= 0;
-    end
 
 endmodule
