@@ -1,12 +1,12 @@
 module freqMux (
-	input logic [8:0] keyFreqIn,
-	input logic [8:0] bbFreqIn,
-	input logic [8:0] dataOut,
+	input logic [8:0] keyFreqIn_fm,
+	input logic [8:0] bbFreqIn_fm,
+	input logic [8:0] dataOut_fm,
 	output logic whichFreqOut
 );
 	always_comb
 		case (whichFreqOut)
-			0: dataOut = keyFreqIn;
-			1: dataOut = bbFreqIn;
+			0: dataOut_fm = keyFreqIn_fm;
+			1: dataOut_fm = bbFreqIn_fm;
 		endcase
 endmodule 
