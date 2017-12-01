@@ -1,13 +1,13 @@
 // sync module
 
 module sync (
-    input logic keyClk1,
-    input logic sysClk,
+    input logic reset, keyClk1, sysClk,
     output logic keyClk2
     )
 
-    logic [4:0] count
+    logic [4:0] count;
 
+    assign keyClk1 = sysClk;
     assign keyClk2 = keyClk1;
 
     always_ff @ (posedge sysClk) begin

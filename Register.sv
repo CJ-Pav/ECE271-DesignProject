@@ -12,7 +12,7 @@ input logic regInData,                      //data line from ps2 keyboard
 
     count = 0;
 
-    always_ff@(posedge clk) begin      //keyboard clock line drives the module
+    always_ff @ (posedge clk) begin         //keyboard clock line drives the module
         sysCount <= sysCount + 1;           //count += 1
 
         if(sysCount == 11)  begin           //writes to decoder every 11 clock ticks
@@ -21,7 +21,7 @@ input logic regInData,                      //data line from ps2 keyboard
         end
 
         if(reg == 'b0ddddddddd1) begin      //check for start and stop bits
-            rawData <=
+            rawData <= rawData >> 1;        //shift data right
             rawData[0] <= regInData;        //pass data to first bit of register
 
         end
@@ -30,7 +30,6 @@ input logic regInData,                      //data line from ps2 keyboard
             sysCount <= 0;                  //set count to 0
             regReset <= 0;                  //reset the reset
         end
-
     end
 
 endmodule
