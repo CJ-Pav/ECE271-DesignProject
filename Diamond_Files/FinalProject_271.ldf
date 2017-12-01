@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FinalProject_271" device="LCMXO3LF-6900C-5BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
+        <Options/>
+        <Source name="../../../../GitHub/ECE271-DesignProject/sysClk.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/buttonLUT1.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/buttonLUT2.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/KeyDecoder.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/keyLUT.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/Register.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/sync.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/topModule.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/Parser.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/SignalClockDivider.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/SignalLUT.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/SignalTOP_LEVEL.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/FSM.sv" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../../GitHub/ECE271-DesignProject/KeyMux.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="FinalProject_271.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FinalProject_2711.sty"/>
+</BaliProject>

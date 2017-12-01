@@ -1,0 +1,51 @@
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: /usr/local/diamond/3.10_x64/synpbase
+#OS: Linux 
+#Hostname: PavBox
+
+# Fri Dec  1 01:08:53 2017
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Running on host :PavBox
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/lucent/machxo3lf.v" (library work)
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/local/diamond/3.10_x64/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/user/Documents/GitHub/ECE271-DesignProject/sysClk.sv" (library work)
+@I::"/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT1.sv" (library work)
+@E: CS187 :"/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT1.sv":10:4:10:14|Expecting ;
+@I::"/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT2.sv" (library work)
+@E: CS187 :"/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT2.sv":10:4:10:14|Expecting ;
+@I::"/home/user/Documents/GitHub/ECE271-DesignProject/KeyDecoder.sv" (library work)
+@E: CG849 :"/home/user/Documents/GitHub/ECE271-DesignProject/KeyDecoder.sv":13:1:13:1|Unexpected ) after , missing port in ANSI list
+@I::"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv" (library work)
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":11:25:11:31|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":12:16:12:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":13:16:13:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":14:16:14:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":15:16:15:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":16:16:16:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":17:16:17:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":18:16:18:22|Assignment target keyFreq must be of type reg, genvar, or logic
+@E: CG425 :"/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv":19:16:19:22|Assignment target keyFreq must be of type reg, genvar, or logic
+12 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec  1 01:08:54 2017
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec  1 01:08:54 2017
+
+###########################################################]

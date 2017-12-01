@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL216 :&quot;/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv&quot;:32:4:32:7|always_ff does not infer sequential logic</Dynamic>
+            <Navigation>CL216</Navigation>
+            <Navigation>/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>always_ff does not infer sequential logic</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv&quot;:19:2:19:10|Found inferred clock state_machine|clk_i which controls 4 sequential elements including state_1[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Found inferred clock state_machine|clk_i which controls 4 sequential elements including state_1[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock state_machine|clk_i with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_i&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock state_machine|clk_i with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_i&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

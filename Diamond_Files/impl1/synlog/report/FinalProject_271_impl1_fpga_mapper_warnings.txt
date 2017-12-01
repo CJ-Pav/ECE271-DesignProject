@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock state_machine|clk_i with period 1000.00ns. Please declare a user-defined clock on object "p:clk_i"

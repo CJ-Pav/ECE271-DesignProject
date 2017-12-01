@@ -1,0 +1,2 @@
+@W: CL216 :"/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv":32:4:32:7|always_ff does not infer sequential logic
+
