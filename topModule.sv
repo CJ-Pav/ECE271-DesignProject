@@ -2,7 +2,7 @@
 
 module topModule (
 	input logic ps2data, // 1 byte input from PS2, one at a time
-	input logic keyClk, 	
+	input logic keyClk,  
 	input logic [7:0] buttonBoard,
 	//input logic sysClk, 
     	//output logic [6:0] segments,
@@ -115,7 +115,7 @@ All internal variables:
 //------------------------------------------------------------------------//
     //logic [8:0] keys;
 	//logic [8:0] keyFreq;
-	keyLUT key_LUT(
+	keyLUT kl(
 		.keys(dataOut_fm),
 		.keyFreq(keyFreq)
 	);
@@ -139,7 +139,7 @@ All internal variables:
 	
 //------------------------------------------------------------------------//
 	//logic [3:0] thousands, hundreds, tens, ones;
-	DigitSeparator (
+	DigitSeparator ds(
 		.displayValue(dataOut_bm),
 		.thousands(thousands),
 		.hundreds(hundreds),
@@ -148,14 +148,14 @@ All internal variables:
 	);
 //------------------------------------------------------------------------//
 	//logic [2:0] state;  
-	state_machine( 
+	state_machine sm( 
 		.reset_n(sysClkReset),
 		.clk_i(clkValue),
 		.state(state)
 	);
 //------------------------------------------------------------------------//
 	//logic [3:0] displayDigit;
-	mainMux (
+	mainMux mm(
 		.state(state),
 		.digit(displayDigit),
 		.thousands(thousands),
