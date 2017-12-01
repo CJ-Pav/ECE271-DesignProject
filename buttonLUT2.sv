@@ -3,12 +3,12 @@
 // output: frequency description
 
 module bLUT2(
-    input logic [7:0] buttonBoard,
+    input logic [7:0] buttons,
     output logic [8:0] buttonFreq
-    )
+    );
 
     always_comb
-        case (buttonBoard)
+        case (buttons)
 			'b00000001: buttons = 'b011011100; //Key1
 			'b00000010: buttons = 'b011110111; //Key2
 			'b00000011: buttons = 'b100000110; //Key3 
@@ -19,4 +19,5 @@ module bLUT2(
 			'b00001000: buttons = 'b110111000; //Key8
 			'b00001001: buttons = 'b000000000; //Key9 (pause)
 		endcase
-endmoduled
+
+endmodule

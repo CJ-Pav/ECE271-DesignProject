@@ -2,8 +2,8 @@
 // convert keyboard output to a frequency for 7-seg display
 
 module keyLUT (
-    input [8:0] keys,
-    output [8:0] keyFreq
+    input logic [8:0] keys,
+    output logic [8:0] keyFreq
     );
 
     always_comb
@@ -18,4 +18,5 @@ module keyLUT (
 			'b010000000: keyFreq = 'b110111000; //Key8
 			'b100000000: keyFreq = 'b000000000; //Key9    
         endcase
+		
 endmodule
