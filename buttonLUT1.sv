@@ -5,7 +5,7 @@
 module bLUT1(
     input logic [7:0] buttonBoard,
     output logic [8:0] buttons
-    )
+    );
 
     always_comb
         case (buttonBoard)
