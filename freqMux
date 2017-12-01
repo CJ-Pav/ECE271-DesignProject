@@ -1,0 +1,12 @@
+module freqMux (
+	input logic [8:0] keyFreqIn,
+	input logic [8:0] bbFreqIn,
+	input logic [8:0] dataOut,
+	output logic whichFreqOut
+);
+	always_comb
+		case (whichFreqOut)
+			0: dataOut = keyFreqIn;
+			1: dataOut = bbFreqIn;
+		endcase
+endmodule 
