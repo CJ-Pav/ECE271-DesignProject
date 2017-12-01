@@ -2,10 +2,10 @@
 
 module topModule (
 	input logic ps2data, // 1 byte input from PS2, one at a time
-	input logic [1:0] keyClk, // come back to it	
+	input logic keyClk, 	
 	input logic [7:0] buttonBoard,
 	//input logic sysClk, 
-    //output logic [6:0] segments,
+    	//output logic [6:0] segments,
 	output logic [7:0] signal
 );
 
