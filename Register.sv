@@ -4,7 +4,7 @@ input logic regInData,                      //data line from ps2 keyboard
     input logic regReset,                   //set to 1 every 11 ticks
     input logic sysCount,                   //tracks clock ticks
     output logic [10:0] regOutData,         //bus to decoder
-    otuput logic sysReset                   //sends reset to 
+    output logic sysReset                   //sends reset to 
 	);
 
     logic sysCount
