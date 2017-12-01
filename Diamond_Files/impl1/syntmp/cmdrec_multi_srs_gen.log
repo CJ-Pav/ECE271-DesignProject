@@ -1,0 +1,8 @@
+/usr/local/diamond/3.10_x64/synpbase/bin/syn_nfilter  -link  -multisrs  "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synwork/FinalProject_271_impl1_comp.srs"  -osyn  "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synwork/FinalProject_271_impl1_mult.srs"  -log  "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synlog/FinalProject_271_impl1_multi_srs_gen.srr" 
+relcom:/usr/local/diamond/3.10_x64/synpbase/bin/syn_nfilter -link -multisrs "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synwork/FinalProject_271_impl1_comp.srs" -osyn "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synwork/FinalProject_271_impl1_mult.srs" -log "/home/user/Documents/Classes/ece271/Design Project/Diamond_Files/impl1/synlog/FinalProject_271_impl1_multi_srs_gen.srr"
+rc:0 success:1 runtime:0
+file:../synwork/FinalProject_271_impl1_comp.srs|io:i|time:1512125172|size:2146|exec:0|csum:8B8659A18BB3FE1F6DF4D3A9A3A1133A
+file:../synwork/FinalProject_271_impl1_mult.srs|io:o|time:1512125173|size:1717|exec:0|csum:
+file:../synlog/FinalProject_271_impl1_multi_srs_gen.srr|io:o|time:1512125173|size:830|exec:0|csum:
+file:/usr/local/diamond/3.10_x64/synpbase/linux_a_64/syn_nfilter|io:i|time:1501863392|size:12690424|exec:1|csum:A627AB8280782A7BED487F9319044368
+file:/usr/local/diamond/3.10_x64/synpbase/bin/syn_nfilter|io:i|time:1501863022|size:366|exec:1|csum:FA02E240C38072139DDDFB111F4F0C5E

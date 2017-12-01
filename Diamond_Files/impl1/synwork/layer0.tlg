@@ -1,0 +1,10 @@
+Selecting top level module state_machine
+@N: CG364 :"/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv":1:7:1:19|Synthesizing module state_machine in library work.
+@W: CL216 :"/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv":32:4:32:7|always_ff does not infer sequential logic
+@N: CL201 :"/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv":19:2:19:10|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 4 reachable states with original encodings of:
+   000
+   001
+   011
+   100

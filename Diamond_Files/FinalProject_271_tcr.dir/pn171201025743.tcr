@@ -1,0 +1,74 @@
+#Start recording tcl command: 12/1/2017 01:08:35
+#Project Location: /home/user/Documents/Classes/ece271/Design Project/Diamond_Files; Project name: FinalProject_271
+prj_project new -name "FinalProject_271" -impl "impl1" -dev LCMXO3LF-6900C-5BG256C -synthesis "synplify"
+prj_src add "/home/user/Documents/GitHub/ECE271-DesignProject/sysClk.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT1.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT2.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/KeyDecoder.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT1.sv"
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT2.sv"
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/KeyDecoder.sv"
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv"
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT1.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/buttonLUT2.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/KeyDecoder.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/keyLUT.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "/home/user/Documents/GitHub/ECE271-DesignProject/Register.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/sync.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/topModule.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/Parser.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalClockDivider.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalLUT.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalTOP_LEVEL.sv"
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/Register.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/sync.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/topModule.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/Parser.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalClockDivider.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalLUT.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/SignalTOP_LEVEL.sv"
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/Register.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/sync.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/SignalClockDivider.sv"
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/SignalLUT.sv"
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/SignalTOP_LEVEL.sv"
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/Parser.sv"
+prj_run Synthesis -impl impl1
+prj_src enable "/home/user/Documents/GitHub/ECE271-DesignProject/topModule.sv"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "/home/user/Documents/GitHub/ECE271-DesignProject/FSM.sv" "/home/user/Documents/GitHub/ECE271-DesignProject/KeyMux.sv"
+prj_run Synthesis -impl impl1
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/topModule.sv"
+prj_run Synthesis -impl impl1
+prj_src exclude "/home/user/Documents/GitHub/ECE271-DesignProject/KeyMux.sv"
+prj_run Synthesis -impl impl1
+#Stop recording: 12/1/2017 02:57:43
