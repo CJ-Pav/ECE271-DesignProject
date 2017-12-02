@@ -1,0 +1,216 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{ECE271, Chapter 1 Reading Report}
+\author{Matthew Shuman}
+\date{March 31st, 2017}
+
+\begin{document}
+\maketitle
+For this and all homework assignments, you should show enough work that the assignment is self supporting.  Write out the problem, explain any researched information needed to solve the problem, and show your work in an organized manner.  I encourage you as students to post questions onto Canvas concerning this assignment.  Debate and discuss these questions in a manner that helps you learn this material.
+
+\section{Chapter Outline}
+Chapter 1 addresses a broad range of topics, but all of these concepts form the foundation for understanding the rest of this textbook.
+\begin{enumerate}
+\item The Game Plan
+
+Digital logic is the foundation for some of the largest companies in Oregon and the United States.  Digital systems are simple and operate on zeros and ones.
+
+\item The Art of Managing Complexity
+
+Discipline, modularity, and the three Y's make it possible for the mass production of complex items.  Abstraction is the concept of hiding details, for example a complex set of planets revolving around the sun can be abstracted as 8 smaller balls rotating around a larger yellow ball.  Discipline is the concept of carefully and purposefully restricting your models to only include necessary features, maximizing the benefits of abstraction.  For example, modeling the Earth as a pale blue dot\cite{YouTubePaleBlueDot} enables a more efficient model of our solar system.  Hierarchy, Modularity, and Regularity are the three Y's and are critical concepts that get leveraged in chapters 2-5 in the textbook.
+
+\item The Digital Abstraction
+
+A digital bit stores either a 1 or a 0, regardless of the actual mechanism used to store this data.  A 1 could represent a voltage above 3 volts and 0 be a voltage below 2 volts, a 1 could represent a mechanical switch that has been flipped to the left and a 0 to the right, or a 1 could represent a powered block of redstone from Minecraft\cite{RedstoneCircuits} while a 0 represents an idle redstone block.
+
+\item Number Systems
+
+There are four main sections in this section of the Chapter.  Number systems are introduced, number systems are converted, number systems are added, and then number systems are complemented to represent negative numbers.
+
+\item Logic Gates
+
+There are four main gates discussed in this section: NOT, AND, OR, and XOR.  Their negated counterparts are BUFFER, NAND, NOR, and XNOR.
+
+\item Beneath the Digital Abstraction
+
+Analog voltages range between 0 volts and the supply voltage, VCC, as a continuous spectrum.  This range is divided into specific regions based on four specified voltages limits, $V_{IL}, V_{IH}, V_{OL}, and V_{OH}$.
+
+\item CMOS Transistors
+Transistors are the fundamental building blocks for logic gates.  They are semiconductor devices, similar to a diode.  A diode is a PN junction, whereas a transistor is a npn or a pnp transistor.  nMOS and pMOS transistors connect their drain and source terminals, based on the voltage applied to their gate input.  Logic gates, such as the AND and OR gates can be constructed by using PMOS transistors as a pull-up network coupled with nMOS transistors as a pull-down network.
+
+\item Power Consumption
+
+There are two components to power consumption, static and dynamic power.
+
+\begin{equation}
+P_{static}=I_{DD}V_{DD}
+\end{equation}
+$I_{DD}$ is the leakage current through the digital logic and $V_{DD}$ is the supply voltage powering the digital logic.
+
+\begin{equation}
+P_{dynamic}=\frac{1}{2}CV_{DD}^2f
+\end{equation}
+C is the capacitance of the digital logic, relating to the number of logic gates used in the design.  f is the clock frequency of the digital logic.
+
+\item Summary and Look Ahead
+
+Best joke of the chapter:  "There are 10 kinds of people in this world: those who can count in binary and those who can't."
+
+The summary provides information reviewing the prior 8 sections of chapter 1.  It then relates this content to the remainder of the textbook, with chapters 2 through 5 being the study of digital logic.
+\end{enumerate}
+
+\section{Grey Box Exploration}
+\begin{enumerate}
+\item The first blurb is on page 20, where \emph{According to Larry Wall, inventor of the Perl programming language, "the three principal virtues of a programmer are Laziness, Impatience, and Hubris"}.  Larry wall is an interesting fellow, who was born on September 27th 1949.  He also created the Perl programming language and has two critical rules for his guidance of the direction and functionality of Perl.
+\begin{enumerate}
+\item Larry is always by definition right about how Perl should behave. This means he has final veto power on the core functionality.
+\item Larry is allowed to change his mind about any matter at a later date, regardless of whether he previously invoked Rule 1.
+\end{enumerate}
+
+Larry is always right, even when contradicting his prior decisions\cite{WikiLarryHall}.  He was featured in a Big Think video where he talked 5 programming languages everyone should know:
+\begin{enumerate}
+\item Javascript
+\item Java
+\item Haskell
+\item C
+\item Scripting (Python, Perl, Ruby)
+\end{enumerate}
+
+\item The second blurb is on page 13, where processor and microprocessor are described as, \emph{A microprocessor is a processor built on a single chip.  Until the 1970's, processors were too complicated to fit on one chip, so mainframe processors were built from boards containing many chips.  Intel introduced the first 4-bit microprocessor, call the 4004, in 1971. Now, even the most sophisticated supercomputers are built using are built using microprocessors.  We will use the terms microprocessor and processor interchangeably throughout this book.} Intel is the largest private employer in the state of Oregon.  They directly employ 16,500 people in the state of Oregon and can be indirectly attributed with the 67,579.  These jobs attributed to Intel pay almost \$80,000, which is almost twice the average personal income of an Oregonian, \$43,000\cite{IntelOregon}.  
+
+\end{enumerate}
+
+\section{Figures}
+Two figures were selected from this chapter for special recognition.  Figure 1.11 was selected for the effectiveness in showing how different number systems have specific ranges for the same binary values.  Unsigned numbers can only be positive, while 2's complement and Sign/Magnitude can represent negative numbers at a cost of increased range.
+  \begin{figure}[h]
+    \includegraphics[width=5 in]{./Images/Fig1-11.png}
+    \caption{Different number systems and their respective values.}
+    \label{fig:1-11}
+  \end{figure}
+
+Figure 1.31 was selected for highlighting the opposing nature of pMOS and nMOS transistors.  A zero input on the gate will connect a pMOS transistor, but it would disconnect a nMOS transistor.
+
+\begin{figure}[h]
+  \includegraphics[width=4 in]{./Images/Fig1-31.png}
+  \caption{nMOS and pMOS transition tables.}
+  \label{fig:1-31}
+\end{figure}
+
+\section{Example Problems}
+This section is attached to the assignment submission in a separate PDF of scanned work done neatly on engineering paper.
+
+\section{Glossary}
+All definitions were found from the Google search engine, typing "define analog" for the first item.
+\begin{enumerate}
+\item Analog: 
+
+adjective:
+relating to or using signals or information represented by a continuously variable physical quantity such as spatial position or voltage.
+
+
+noun:
+a person or thing seen as comparable to another.
+\item Discrete:
+
+adjective:
+individually separate and distinct.
+
+\item Discreet:
+
+adjective:
+careful and circumspect in one's speech or actions, especially in order to avoid causing offense or to gain an advantage.
+\item Compliment:
+
+noun:
+a polite expression of praise or admiration.
+
+verb:
+politely congratulate or praise (someone) for something.
+
+\item Complement
+
+noun:
+
+1.  a thing that completes or brings to perfection.
+"the libretto proved a perfect complement to the music"
+synonyms:	accompaniment, companion, addition, supplement, accessory, trimming
+"the perfect complement to the food"
+
+2.
+a number or quantity of something required to make a group complete.
+
+\item nibble
+
+verb:
+
+1.
+take small bites out of.
+"he sat nibbling a cookie"
+
+2.
+show cautious interest in a project or proposal.
+"there's a New York agent nibbling"
+
+noun:
+
+1.
+an instance of nibbling something.
+synonyms:	bite, gnaw, chew; taste
+"the fish enjoyed a nibble on the lettuce"
+
+2.
+an expression of cautious interest in a project or proposal.
+"now and then she gets a nibble, but no one will commit to an interview"
+
+\end{enumerate}
+
+\section{Interview Question}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5 in]{./Images/IntQues1-2.png}
+  \caption{A king counts his money.}
+  \label{fig:IQ1-2}
+\end{figure}
+
+The obvious answer being asked from the concepts covered in the textbook would be 6, because $2^6$ is 64.  This calculation would be applicable if you split the money into two piles, weighed them, and then took the lighter side.  64 becomes 32 with one weighing of the scale.  The progression would be 64 to 32 to 16 to 8 to 4 to 2 to 1, yielding 6 measurements of the scale.  But this is a non-ideal answer.
+
+It would be possible to divide the money into three piles, weighing 2 piles, and leaving the 3rd one aside.  In the event of a tie, the omitted pile would contain the counterfeit.  Dividing the piles into thirds would be impossible, because 64 divides unevenly.  I propose initial piles of 27, 27, and 10.  Assuming the worst case, the counterfeit would be in a pile of 27, which would be divided into 3.  The progression for the worst case would be 64 to 27 to 9 to 3 to 1, yielding an answer in just 4 measurements.  This saves the king drastic amounts of time.
+
+The real challenge was presented by Captain Holt of Brooklyn 99\cite{YouTubeBrooklyn99}.
+
+\section{Reflection}
+This chapter only had 32 pages, but there were many different topics discussed.  The easiest part was doing binary to decimal conversions, because I did that in a prior course.  The hardest part to understand was CMOS, because I've never seen a circuit before.
+
+I'm eager to see how these topics will be explored in lecture, and to have a chance to ask some questions and solve some example problems.
+
+\section{Questions for Lecture}
+\begin{enumerate}
+\item Is there an easier way to convert octal numbers into hexadecimal numbers?
+\item How are CMOS circuits developed for gates besides the AND and OR standard gates?
+\item I understand nMOS and pMOS transistors and drew the schematic for 1.87, but I get confused with the 8 different transistors.  How do I start analyzing this circuit?
+\end{enumerate}
+
+
+\bibliographystyle{ieeetr}
+\bibliography{sample}
+
+\end{document}

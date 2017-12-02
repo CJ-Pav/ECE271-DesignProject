@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.12.1)  1 DEC 2017 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.12.1)  1 DEC 2017 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,7 +715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
-<./Images/jackPictures/highLevel.png, id=91, 623.32875pt x 421.575pt>
+<./Images/jackPictures/highLevel.png, id=95, 623.32875pt x 421.575pt>
 File: ./Images/jackPictures/highLevel.png Graphic file (type png)
 <use ./Images/jackPictures/highLevel.png>
 Package pdftex.def Info: ./Images/jackPictures/highLevel.png  used on input lin
@@ -724,21 +724,21 @@ Package pdftex.def Info: Requested size: 433.62pt x 293.27359pt on input line 3
 7.
 
 Overfull \hbox (6.82864pt too wide) in paragraph at lines 37--38
-[][] 
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
@@ -746,258 +746,272 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Images/jackPictures/high
 Level.png>]
-<Images/ps2keyboard.png, id=105, 730.73pt x 361.35pt>
+<Images/ps2keyboard.png, id=108, 730.73pt x 361.35pt>
 File: Images/ps2keyboard.png Graphic file (type png)
 <use Images/ps2keyboard.png>
-Package pdftex.def Info: Images/ps2keyboard.png  used on input line 53. on inpu
-t line 53.
+Package pdftex.def Info: Images/ps2keyboard.png  used on input line 51. on inpu
+t line 51.
 Package pdftex.def Info: Requested size: 433.62pt x 214.42973pt on input line 5
-3.
+1.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 53--54
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 51--52
 [][] 
  []
 
 (/usr/share/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [2 <./Images/ps2keyboard.png>]
-<./Images/bBoard.png, id=112, 740.7675pt x 355.3275pt>
+<./Images/bBoard.png, id=115, 740.7675pt x 355.3275pt>
 File: ./Images/bBoard.png Graphic file (type png)
 <use ./Images/bBoard.png>
-Package pdftex.def Info: ./Images/bBoard.png  used on input line 63. on input l
-ine 63.
+Package pdftex.def Info: ./Images/bBoard.png  used on input line 61. on input l
+ine 61.
 Package pdftex.def Info: Requested size: 433.62pt x 207.99857pt on input line 6
-3.
+1.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 63--64
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 61--62
 [][] 
  []
 
-<Images/topLevelSchematic.jpg, id=113, 3163.82pt x 2184.16pt>
+<Images/topLevelSchematic.jpg, id=116, 3163.82pt x 2184.16pt>
 File: Images/topLevelSchematic.jpg Graphic file (type jpg)
 <use Images/topLevelSchematic.jpg>
-Package pdftex.def Info: Images/topLevelSchematic.jpg  used on input line 76. o
-n input line 76.
+Package pdftex.def Info: Images/topLevelSchematic.jpg  used on input line 72. o
+n input line 72.
 Package pdftex.def Info: Requested size: 397.48499pt x 274.38576pt on input lin
-e 76.
+e 72.
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
 
  []
 
-<./Images/DiagramsYang/register.png, id=114, 532.61484pt x 164.48953pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+
+ []
+
+[3 <./Images/bBoard.png> <./Images/topLevelSchematic.jpg>]
+<./Images/DiagramsYang/register.png, id=122, 532.61484pt x 164.48953pt>
 File: ./Images/DiagramsYang/register.png Graphic file (type png)
 <use ./Images/DiagramsYang/register.png>
 Package pdftex.def Info: ./Images/DiagramsYang/register.png  used on input line
- 91. on input line 91.
-Package pdftex.def Info: Requested size: 433.62pt x 133.92099pt on input line 9
-1.
+ 84. on input line 84.
+Package pdftex.def Info: Requested size: 433.62pt x 133.92099pt on input line 8
+4.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 91--92
-[][] 
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 84--85
+[] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--103
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--103
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
 
  []
 
-<./Images/DiagramsYang/keyDec.png, id=115, 547.6711pt x 173.14688pt>
+<./Images/DiagramsYang/keyDec.png, id=123, 547.6711pt x 173.14688pt>
 File: ./Images/DiagramsYang/keyDec.png Graphic file (type png)
 <use ./Images/DiagramsYang/keyDec.png>
-Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 1
-08. on input line 108.
-Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 108
-.
+Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 9
+8. on input line 98.
+Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 98.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 108--109
-[][] 
+
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 98--99
+[] 
  []
 
-[3 <./Images/bBoard.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Underfull \hbox (badness 10000) in paragraph at lines 101--106
 
  []
 
-<./Images/jackPictures/keyLUT.png, id=121, 571.13374pt x 288.07625pt>
+<./Images/jackPictures/keyLUT.png, id=124, 571.13374pt x 288.07625pt>
 File: ./Images/jackPictures/keyLUT.png Graphic file (type png)
 <use ./Images/jackPictures/keyLUT.png>
 Package pdftex.def Info: ./Images/jackPictures/keyLUT.png  used on input line 1
-23. on input line 123.
+10. on input line 110.
 Package pdftex.def Info: Requested size: 433.62pt x 218.71603pt on input line 1
-23.
+10.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 123--124
-[][] 
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 110--111
+[] 
+ []
+
+[4 <./Images/DiagramsYang/register.png> <./Images/DiagramsYang/keyDec.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--133
-
- []
-
-[4 <./Images/topLevelSchematic.jpg> <./Images/DiagramsYang/register.png>]
-<./Images/jackPictures/blut1.png, id=129, 593.21625pt x 299.1175pt>
+<./Images/jackPictures/blut1.png, id=131, 593.21625pt x 299.1175pt>
 File: ./Images/jackPictures/blut1.png Graphic file (type png)
 <use ./Images/jackPictures/blut1.png>
-Package pdftex.def Info: ./Images/jackPictures/blut1.png  used on input line 13
-8. on input line 138.
+Package pdftex.def Info: ./Images/jackPictures/blut1.png  used on input line 12
+2. on input line 122.
 Package pdftex.def Info: Requested size: 433.62pt x 218.65062pt on input line 1
-38.
+22.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 138--139
-[][] 
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 122--123
+[] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--148
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--148
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
-<./Images/jackPictures/blut2.png, id=130, 619.31375pt x 301.125pt>
+<./Images/jackPictures/blut2.png, id=132, 619.31375pt x 301.125pt>
 File: ./Images/jackPictures/blut2.png Graphic file (type png)
 <use ./Images/jackPictures/blut2.png>
-Package pdftex.def Info: ./Images/jackPictures/blut2.png  used on input line 15
-3. on input line 153.
+Package pdftex.def Info: ./Images/jackPictures/blut2.png  used on input line 13
+4. on input line 134.
 Package pdftex.def Info: Requested size: 433.62pt x 210.84578pt on input line 1
-53.
+34.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 153--154
-[][] 
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 134--135
+[] 
+ []
+
+[5 <./Images/jackPictures/keyLUT.png> <./Images/jackPictures/blut1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--142
+
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--163
+Underfull \hbox (badness 10000) in paragraph at lines 137--142
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--163
-
- []
-
-[5 <./Images/DiagramsYang/keyDec.png> <./Images/jackPictures/keyLUT.png>]
-File: ./Images/DiagramsYang/keyDec.png Graphic file (type png)
-<use ./Images/DiagramsYang/keyDec.png>
-Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 1
-68. on input line 168.
-Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 168
-.
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 168--169
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: ./Images/DiagramsYang/keyDec.png Graphic file (type png)
 <use ./Images/DiagramsYang/keyDec.png>
 Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 1
-77. on input line 177.
-Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 177
+46. on input line 146.
+Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 146
 .
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 177--178
-[][] 
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 146--147
+[] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
-<./Images/chasePictures/sigTopMod.png, id=139, 694.595pt x 352.31625pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
+
+ []
+
+<./Images/jackPictures/boardMUX.png, id=139, 607.26875pt x 367.3725pt>
+File: ./Images/jackPictures/boardMUX.png Graphic file (type png)
+<use ./Images/jackPictures/boardMUX.png>
+Package pdftex.def Info: ./Images/jackPictures/boardMUX.png  used on input line
+ 159. on input line 159.
+Package pdftex.def Info: Requested size: 433.62pt x 262.32738pt on input line 1
+59.
+
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 159--160
+[] 
+ []
+
+[6 <./Images/jackPictures/blut2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 161--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--166
+
+ []
+
+<./Images/chasePictures/sigTopMod.png, id=147, 694.595pt x 352.31625pt>
 File: ./Images/chasePictures/sigTopMod.png Graphic file (type png)
 <use ./Images/chasePictures/sigTopMod.png>
 Package pdftex.def Info: ./Images/chasePictures/sigTopMod.png  used on input li
-ne 186. on input line 186.
+ne 171. on input line 171.
 Package pdftex.def Info: Requested size: 433.62pt x 219.94981pt on input line 1
-86.
+71.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 186--187
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 171--172
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Images/chasePictures/SignalClockDivider.PNG, id=140, 414.348pt x 224.037pt>
+<./Images/chasePictures/SignalClockDivider.PNG, id=148, 414.348pt x 224.037pt>
 File: ./Images/chasePictures/SignalClockDivider.PNG Graphic file (type png)
 <use ./Images/chasePictures/SignalClockDivider.PNG>
 Package pdftex.def Info: ./Images/chasePictures/SignalClockDivider.PNG  used on
- input line 197. on input line 197.
-Package pdftex.def Info: Requested size: 433.62pt x 234.4561pt on input line 19
-7.
+ input line 182. on input line 182.
+Package pdftex.def Info: Requested size: 433.62pt x 234.4561pt on input line 18
+2.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 197--198
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 182--183
 [][] 
  []
 
+[7 <./Images/jackPictures/boardMUX.png> <./Images/chasePictures/sigTopMod.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
 
  []
 
-<./Images/chasePictures/SIgnalLUT.PNG, id=141, 411.33675pt x 162.00525pt>
+<./Images/chasePictures/SIgnalLUT.PNG, id=156, 411.33675pt x 162.00525pt>
 File: ./Images/chasePictures/SIgnalLUT.PNG Graphic file (type png)
 <use ./Images/chasePictures/SIgnalLUT.PNG>
 Package pdftex.def Info: ./Images/chasePictures/SIgnalLUT.PNG  used on input li
-ne 210. on input line 210.
-Package pdftex.def Info: Requested size: 433.62pt x 170.79031pt on input line 2
-10.
+ne 195. on input line 195.
+Package pdftex.def Info: Requested size: 433.62pt x 170.79031pt on input line 1
+95.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 210--211
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 195--196
 [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
+
+ []
+
+[8 <./Images/chasePictures/SignalClockDivider.PNG> <./Images/chasePictures/SIgn
+alLUT.PNG>]
+<./Images/DiagramsYang/sysClk.png, id=165, 414.42328pt x 138.5175pt>
+File: ./Images/DiagramsYang/sysClk.png Graphic file (type png)
+<use ./Images/DiagramsYang/sysClk.png>
+Package pdftex.def Info: ./Images/DiagramsYang/sysClk.png  used on input line 2
+08. on input line 208.
+Package pdftex.def Info: Requested size: 433.62pt x 144.93828pt on input line 2
+08.
+
+Overfull \hbox (6.82864pt too wide) in paragraph at lines 208--209
+[][] 
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
 
  []
 
@@ -1013,75 +1027,395 @@ Overfull \hbox (6.82864pt too wide) in paragraph at lines 223--224
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
 
-File: ./Images/DiagramsYang/keyDec.png Graphic file (type png)
-<use ./Images/DiagramsYang/keyDec.png>
-Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 2
-34. on input line 234.
-Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 234
-.
-
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 234--235
-[][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
 
-File: ./Images/DiagramsYang/keyDec.png Graphic file (type png)
-<use ./Images/DiagramsYang/keyDec.png>
-Package pdftex.def Info: ./Images/DiagramsYang/keyDec.png  used on input line 2
-45. on input line 245.
-Package pdftex.def Info: Requested size: 433.62pt x 137.091pt on input line 245
-.
+ []
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 245--246
+<./Images/Archive/1-TopMod1.png, id=166, 693.59125pt x 640.3925pt>
+File: ./Images/Archive/1-TopMod1.png Graphic file (type png)
+<use ./Images/Archive/1-TopMod1.png>
+Package pdftex.def Info: ./Images/Archive/1-TopMod1.png  used on input line 243
+. on input line 243.
+Package pdftex.def Info: Requested size: 433.62pt x 400.37135pt on input line 2
+43.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 243--244
 [][] 
  []
 
-[6 <./Images/jackPictures/blut1.png>]
+[9 <./Images/DiagramsYang/sysClk.png>]
+<./Images/Archive/1-TopMod2.png, id=176, 691.58376pt x 587.19376pt>
+File: ./Images/Archive/1-TopMod2.png Graphic file (type png)
+<use ./Images/Archive/1-TopMod2.png>
+Package pdftex.def Info: ./Images/Archive/1-TopMod2.png  used on input line 245
+. on input line 245.
+Package pdftex.def Info: Requested size: 433.62pt x 368.17789pt on input line 2
+45.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 245--246
+[][] 
+ []
 
-[7 <./Images/jackPictures/blut2.png>] [8 <./Images/chasePictures/sigTopMod.png>
- <./Images/chasePictures/SignalClockDivider.PNG>] [9 <./Images/chasePictures/SI
-gnalLUT.PNG>]
+[10 <./Images/Archive/1-TopMod1.png>]
+<./Images/Archive/1-TopMod3.png, id=182, 691.58376pt x 516.93124pt>
+File: ./Images/Archive/1-TopMod3.png Graphic file (type png)
+<use ./Images/Archive/1-TopMod3.png>
+Package pdftex.def Info: ./Images/Archive/1-TopMod3.png  used on input line 247
+. on input line 247.
+Package pdftex.def Info: Requested size: 433.62pt x 324.1224pt on input line 24
+7.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 247--248
+[][] 
+ []
+
+<./Images/Archive/1-TopMod4.png, id=183, 689.57625pt x 664.4825pt>
+File: ./Images/Archive/1-TopMod4.png Graphic file (type png)
+<use ./Images/Archive/1-TopMod4.png>
+Package pdftex.def Info: ./Images/Archive/1-TopMod4.png  used on input line 249
+. on input line 249.
+Package pdftex.def Info: Requested size: 433.62pt x 417.84546pt on input line 2
+49.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 249--250
+[][] 
+ []
+
+[11 <./Images/Archive/1-TopMod2.png> <./Images/Archive/1-TopMod3.png>]
+<./Images/Archive/2-Register.png, id=190, 692.5875pt x 573.14125pt>
+File: ./Images/Archive/2-Register.png Graphic file (type png)
+<use ./Images/Archive/2-Register.png>
+Package pdftex.def Info: ./Images/Archive/2-Register.png  used on input line 25
+5. on input line 255.
+Package pdftex.def Info: Requested size: 433.62pt x 358.84207pt on input line 2
+55.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 255--256
+[][] 
+ []
+
+[12 <./Images/Archive/1-TopMod4.png>]
+<./Images/Archive/3-KeyDecoder.png, id=197, 693.59125pt x 287.0725pt>
+File: ./Images/Archive/3-KeyDecoder.png Graphic file (type png)
+<use ./Images/Archive/3-KeyDecoder.png>
+Package pdftex.def Info: ./Images/Archive/3-KeyDecoder.png  used on input line 
+261. on input line 261.
+Package pdftex.def Info: Requested size: 433.62pt x 179.4768pt on input line 26
+1.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 261--262
+[][] 
+ []
+
+<./Images/Archive/4-KeyLUT.png, id=198, 695.59875pt x 287.0725pt>
+File: ./Images/Archive/4-KeyLUT.png Graphic file (type png)
+<use ./Images/Archive/4-KeyLUT.png>
+Package pdftex.def Info: ./Images/Archive/4-KeyLUT.png  used on input line 266.
+ on input line 266.
+Package pdftex.def Info: Requested size: 433.62pt x 178.95116pt on input line 2
+66.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 266--267
+[][] 
+ []
+
+[13 <./Images/Archive/2-Register.png> <./Images/Archive/3-KeyDecoder.png>]
+<./Images/Archive/5-BLUT1.png, id=208, 693.59125pt x 287.0725pt>
+File: ./Images/Archive/5-BLUT1.png Graphic file (type png)
+<use ./Images/Archive/5-BLUT1.png>
+Package pdftex.def Info: ./Images/Archive/5-BLUT1.png  used on input line 270. 
+on input line 270.
+Package pdftex.def Info: Requested size: 433.62pt x 179.4768pt on input line 27
+0.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 270--271
+[][] 
+ []
+
+<./Images/Archive/6-BLUT2.png, id=209, 693.59125pt x 288.07625pt>
+File: ./Images/Archive/6-BLUT2.png Graphic file (type png)
+<use ./Images/Archive/6-BLUT2.png>
+Package pdftex.def Info: ./Images/Archive/6-BLUT2.png  used on input line 274. 
+on input line 274.
+Package pdftex.def Info: Requested size: 433.62pt x 180.10434pt on input line 2
+74.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+<./Images/Archive/7-FrequencyMux.png, id=210, 694.595pt x 207.77625pt>
+File: ./Images/Archive/7-FrequencyMux.png Graphic file (type png)
+<use ./Images/Archive/7-FrequencyMux.png>
+Package pdftex.def Info: ./Images/Archive/7-FrequencyMux.png  used on input lin
+e 278. on input line 278.
+Package pdftex.def Info: Requested size: 433.62pt x 129.71399pt on input line 2
+78.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 278--279
+[][] 
+ []
+
+[14 <./Images/Archive/4-KeyLUT.png> <./Images/Archive/5-BLUT1.png> <./Images/Ar
+chive/6-BLUT2.png>]
+<./Images/Archive/8-BoardMux.png, id=221, 693.59125pt x 210.7875pt>
+File: ./Images/Archive/8-BoardMux.png Graphic file (type png)
+<use ./Images/Archive/8-BoardMux.png>
+Package pdftex.def Info: ./Images/Archive/8-BoardMux.png  used on input line 28
+2. on input line 282.
+Package pdftex.def Info: Requested size: 433.62pt x 131.78368pt on input line 2
+82.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 282--283
+[][] 
+ []
+
+<./Images/Archive/9-SignalTopLevel.png, id=222, 695.59875pt x 392.46625pt>
+File: ./Images/Archive/9-SignalTopLevel.png Graphic file (type png)
+<use ./Images/Archive/9-SignalTopLevel.png>
+Package pdftex.def Info: ./Images/Archive/9-SignalTopLevel.png  used on input l
+ine 286. on input line 286.
+Package pdftex.def Info: Requested size: 433.62pt x 244.65001pt on input line 2
+86.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 286--287
+[][] 
+ []
+
+File: ./Images/Archive/9-SignalTopLevel.png Graphic file (type png)
+<use ./Images/Archive/9-SignalTopLevel.png>
+Package pdftex.def Info: ./Images/Archive/9-SignalTopLevel.png  used on input l
+ine 290. on input line 290.
+Package pdftex.def Info: Requested size: 433.62pt x 244.65001pt on input line 2
+90.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 290--291
+[][] 
+ []
+
+[15 <./Images/Archive/7-FrequencyMux.png> <./Images/Archive/8-BoardMux.png> <./
+Images/Archive/9-SignalTopLevel.png>]
+<./Images/Archive/11-SignalLUT.png, id=233, 693.59125pt x 605.26125pt>
+File: ./Images/Archive/11-SignalLUT.png Graphic file (type png)
+<use ./Images/Archive/11-SignalLUT.png>
+Package pdftex.def Info: ./Images/Archive/11-SignalLUT.png  used on input line 
+295. on input line 295.
+Package pdftex.def Info: Requested size: 433.62pt x 378.4074pt on input line 29
+5.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 295--296
+[][] 
+ []
+
+<./Images/Archive/13-SystemClock.png, id=234, 691.58376pt x 211.79124pt>
+File: ./Images/Archive/13-SystemClock.png Graphic file (type png)
+<use ./Images/Archive/13-SystemClock.png>
+Package pdftex.def Info: ./Images/Archive/13-SystemClock.png  used on input lin
+e 299. on input line 299.
+Package pdftex.def Info: Requested size: 433.62pt x 132.79578pt on input line 2
+99.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 299--300
+[][] 
+ []
+
+[16 <./Images/Archive/11-SignalLUT.png>]
+<./Images/Archive/14-StateMachine.png, id=242, 697.60625pt x 646.415pt>
+File: ./Images/Archive/14-StateMachine.png Graphic file (type png)
+<use ./Images/Archive/14-StateMachine.png>
+Package pdftex.def Info: ./Images/Archive/14-StateMachine.png  used on input li
+ne 303. on input line 303.
+Package pdftex.def Info: Requested size: 433.62pt x 401.79897pt on input line 3
+03.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 303--304
+[][] 
+ []
+
+<./Images/Archive/15-Parser.png, id=243, 692.5875pt x 211.79124pt>
+File: ./Images/Archive/15-Parser.png Graphic file (type png)
+<use ./Images/Archive/15-Parser.png>
+Package pdftex.def Info: ./Images/Archive/15-Parser.png  used on input line 307
+. on input line 307.
+Package pdftex.def Info: Requested size: 433.62pt x 132.60188pt on input line 3
+07.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 307--308
+[][] 
+ []
+
+[17 <./Images/Archive/13-SystemClock.png> <./Images/Archive/14-StateMachine.png
+>]
+<./Images/Archive/16-MainMux.png, id=252, 697.60625pt x 284.06125pt>
+File: ./Images/Archive/16-MainMux.png Graphic file (type png)
+<use ./Images/Archive/16-MainMux.png>
+Package pdftex.def Info: ./Images/Archive/16-MainMux.png  used on input line 31
+1. on input line 311.
+Package pdftex.def Info: Requested size: 433.62pt x 176.56691pt on input line 3
+11.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 311--312
+[][] 
+ []
+
+<./Images/Archive/17-SegmentDecoder.png, id=253, 694.595pt x 288.07625pt>
+File: ./Images/Archive/17-SegmentDecoder.png Graphic file (type png)
+<use ./Images/Archive/17-SegmentDecoder.png>
+Package pdftex.def Info: ./Images/Archive/17-SegmentDecoder.png  used on input 
+line 315. on input line 315.
+Package pdftex.def Info: Requested size: 433.62pt x 179.845pt on input line 315
+.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 315--316
+[][] 
+ []
+
+<./Images/chasePictures/SIgnalLUTSimulation.PNG, id=254, 775.09575pt x 157.1872
+6pt>
+File: ./Images/chasePictures/SIgnalLUTSimulation.PNG Graphic file (type png)
+<use ./Images/chasePictures/SIgnalLUTSimulation.PNG>
+Package pdftex.def Info: ./Images/chasePictures/SIgnalLUTSimulation.PNG  used o
+n input line 325. on input line 325.
+Package pdftex.def Info: Requested size: 433.62pt x 87.9355pt on input line 325
+.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 325--326
+[][] 
+ []
+
+<./Images/chasePictures/SignalGeneratorSimulation.PNG, id=255, 731.1315pt x 73.
+4745pt>
+File: ./Images/chasePictures/SignalGeneratorSimulation.PNG Graphic file (type p
+ng)
+<use ./Images/chasePictures/SignalGeneratorSimulation.PNG>
+Package pdftex.def Info: ./Images/chasePictures/SignalGeneratorSimulation.PNG  
+used on input line 327. on input line 327.
+Package pdftex.def Info: Requested size: 433.62pt x 43.57603pt on input line 32
+7.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 327--328
+[][] 
+ []
+
+[18 <./Images/Archive/15-Parser.png> <./Images/Archive/16-MainMux.png> <./Image
+s/Archive/17-SegmentDecoder.png> <./Images/chasePictures/SIgnalLUTSimulation.PN
+G>]
+<./Images/chasePictures/SignalClockDividerSimulation.PNG, id=267, 761.244pt x 8
+0.09924pt>
+File: ./Images/chasePictures/SignalClockDividerSimulation.PNG Graphic file (typ
+e png)
+<use ./Images/chasePictures/SignalClockDividerSimulation.PNG>
+Package pdftex.def Info: ./Images/chasePictures/SignalClockDividerSimulation.PN
+G  used on input line 329. on input line 329.
+Package pdftex.def Info: Requested size: 433.62pt x 45.62646pt on input line 32
+9.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 329--330
+[][] 
+ []
+
+<./Images/chasePictures/SignalGeneratorSimulationSine.PNG, id=268, 734.14275pt 
+x 267.399pt>
+File: ./Images/chasePictures/SignalGeneratorSimulationSine.PNG Graphic file (ty
+pe png)
+<use ./Images/chasePictures/SignalGeneratorSimulationSine.PNG>
+Package pdftex.def Info: ./Images/chasePictures/SignalGeneratorSimulationSine.P
+NG  used on input line 331. on input line 331.
+Package pdftex.def Info: Requested size: 433.62pt x 157.93948pt on input line 3
+31.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 331--332
+[][] 
+ []
+
+<./Images/boardMuxSimulation.PNG, id=269, 281.853pt x 56.00925pt>
+File: ./Images/boardMuxSimulation.PNG Graphic file (type png)
+<use ./Images/boardMuxSimulation.PNG>
+Package pdftex.def Info: ./Images/boardMuxSimulation.PNG  used on input line 33
+5. on input line 335.
+Package pdftex.def Info: Requested size: 433.62pt x 86.16986pt on input line 33
+5.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 335--336
+[][] 
+ []
+
+<./Images/freqMuxSimulation.PNG, id=270, 271.61475pt x 53.60025pt>
+File: ./Images/freqMuxSimulation.PNG Graphic file (type png)
+<use ./Images/freqMuxSimulation.PNG>
+Package pdftex.def Info: ./Images/freqMuxSimulation.PNG  used on input line 337
+. on input line 337.
+Package pdftex.def Info: Requested size: 433.62pt x 85.57646pt on input line 33
+7.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 337--338
+[][] 
+ []
+
+<./Images/freqMuxSimulationDo.PNG, id=271, 221.628pt x 47.57774pt>
+File: ./Images/freqMuxSimulationDo.PNG Graphic file (type png)
+<use ./Images/freqMuxSimulationDo.PNG>
+Package pdftex.def Info: ./Images/freqMuxSimulationDo.PNG  used on input line 3
+39. on input line 339.
+Package pdftex.def Info: Requested size: 433.62pt x 93.08762pt on input line 33
+9.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 339--340
+[][] 
+ []
+
+<./Images/boardMuxSimulationDo.PNG, id=272, 207.174pt x 127.07475pt>
+File: ./Images/boardMuxSimulationDo.PNG Graphic file (type png)
+<use ./Images/boardMuxSimulationDo.PNG>
+Package pdftex.def Info: ./Images/boardMuxSimulationDo.PNG  used on input line 
+341. on input line 341.
+Package pdftex.def Info: Requested size: 433.62pt x 265.99228pt on input line 3
+41.
+
+Overfull \hbox (31.82867pt too wide) in paragraph at lines 341--342
+[][] 
+ []
+
+[19 <./Images/chasePictures/SignalGeneratorSimulation.PNG> <./Images/chasePictu
+res/SignalClockDividerSimulation.PNG> <./Images/chasePictures/SignalGeneratorSi
+mulationSine.PNG> <./Images/boardMuxSimulation.PNG> <./Images/freqMuxSimulation
+.PNG> <./Images/freqMuxSimulationDo.PNG>]
 No file main.bbl.
-[10
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+[20 <./Images/boardMuxSimulationDo.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 89121E72E1254185381B150E47716E3F;1268.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+(rerunfilecheck)             Checksum: D261EA19589C81B7D3825B38A78E3DB8;1322.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
  ) 
 Here is how much of TeX's memory you used:
- 18822 strings out of 492985
- 344815 string characters out of 6138638
- 428400 words of memory out of 5000000
- 21992 multiletter control sequences out of 15000+600000
+ 18973 strings out of 492985
+ 349740 string characters out of 6138638
+ 424967 words of memory out of 5000000
+ 22095 multiletter control sequences out of 15000+600000
  12118 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,77p,1156b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,77p,1156b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000
-.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on main.pdf (10 pages, 1226738 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx120
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfrm1728.pfb>
+Output written on main.pdf (20 pages, 2772991 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -33,11 +33,9 @@ The idea of this project was to test our FPGA programming skills in a more rigor
 
 \section{High Level}
 
-\begin{figure}[h]
+
     \includegraphics[width=6 in]{./Images/jackPictures/highLevel.png}
-    \caption{High Level Representation}
-    \label{fig:1}
-\end{figure}
+
 
 Inputs: This reads signals from either a PS${_2}$ keyboard or an 8-button push button board, the one provided in the lab portion of this class. \newline\newline\newline
 Outputs: This design outputs a sine wave signal to a speaker which will play one of the eight preset frequencies, the signal of which is selected by the inputs. 
@@ -53,7 +51,7 @@ Description: As shown in the diagram above, the signals are taken from either of
     \includegraphics[width=6 in]{Images/ps2keyboard.png}
     \caption{PS${_2}$ Keyboard}
     \label{fig:2}
-\end{figure}
+\end{figure} {floats}
 
 The first input that our design takes in is a PS2 keyboard (pictured above). The keyboard has one wire that connects to board itself to the logic. This wire is a data wire that sends data bit by bit to the logic. This type of communication protocol is known as parallel communication. Since the data is sent bit by bit, a shift register is required to pick up all the bits that are sent. This shift register then sends the N-bits of data when the register is full, then wipes the registers clear and starts reading bits in again. The shift register in our design is 11-bits because 11 bits of data represents a pressed key. Three of those eleven bits are erranous and don’t have a particular use in our design. The middle eight bits hold the information for which key was pressed. However, the data does not start flowing instantly upon connection. A clock value has to be started in order for the data wire to start sending signals. The same clock value is used in the register to update the inputted data. \pagebreak
 
@@ -63,20 +61,16 @@ The first input that our design takes in is a PS2 keyboard (pictured above). The
     \includegraphics[width=6 in]{./Images/bBoard.png}
     \caption{buttonBoard}
     \label{fig:3}
-\end{figure} 
+\end{figure}
 
 The second input that our design is capable of reading is the 8-button push-button board. The picture above is the same model as the device used in the lab portion of this class. This is a very simple implementation of parallel communication protocol which can send 8 bits of information at a time. The controller is used in this design to switch between the 8 pre-set frequency values. There is also a command from the button board to pause and play the currently selected frequency through the speaker.
-
 
 \section{Modules}
 
 \subsection{Top Module}
 
-\begin{figure}
-    \includegraphics[width=5.5in]{Images/topLevelSchematic.jpg}
-    \caption{Top Module Schematic}
-    \label{fig:4}
-\end{figure}
+    \includegraphics[width=5.5 in]{Images/topLevelSchematic.jpg}
+
 
 Inputs: This module intakes a 4-bit number representing the decimal value of the current digit being displayed.
 \newline\newline
@@ -87,11 +81,8 @@ Description: The module is built from a case statement that looks at what the in
 
 \subsection{Register}
 
-\begin{figure}[h]
-    \includegraphics[width=6in]{./Images/DiagramsYang/register.png}
-    \caption{Register}
-    \label{fig:5}
-\end{figure}
+    \includegraphics[width=6 in]{./Images/DiagramsYang/register.png}
+
 
 Inputs: \newline
 	regInData from the PS2 keyboard;\newline
@@ -104,11 +95,8 @@ Description: The register takes the keyboard input regInData which comes 1 byte 
 
 \subsection{Keyboard Decoder}
 
-\begin{figure}[h]
     \includegraphics[width=6in]{./Images/DiagramsYang/keyDec.png}
-    \caption{KeyDecoder}
-    \label{fig:6}
-\end{figure}
+
 
 Inputs: This module intakes a 4-bit number representing the decimal value of the current digit being displayed.
 \newline\newline
@@ -117,13 +105,10 @@ Outputs: This module outputs a 7-bit code that is sent to the 7-segment display 
 Description: The module is built from a case statement that looks at what the input value represents in decimal form then decides which code to send to the 7-segment display to turn on the right segments to display the decimal number.
 
 
-\subsection{ Key Look Up Table }
+\subsection{Key Look Up Table}
 
-\begin{figure}[h]
     \includegraphics[width=6 in]{./Images/jackPictures/keyLUT.png}
-    \caption{keyLUT}
-    \label{fig:7}
-\end{figure}
+
 
 Inputs: This module inputs a 9-bit frequency key that is related to an actual frequency value.
 \newline\newline
@@ -134,11 +119,8 @@ Description: The module is constructed from a case statement that selects which 
 
 \subsection{Button Look Up Table 1}
 
-\begin{figure}[h]
     \includegraphics[width=6 in]{./Images/jackPictures/blut1.png}
-    \caption{buttonLUT1}
-    \label{fig:8}
-\end{figure}
+
 
 Inputs: This module intakes 8-bits of data from the button board.
 \newline\newline
@@ -149,11 +131,8 @@ Description: The module is built from a case statement that looks at the buttons
 
 \subsection{Button Look Up Table 2}
 
-\begin{figure}[h]
     \includegraphics[width=6 in]{./Images/jackPictures/blut2.png}
-    \caption{buttonLUT2}
-    \label{fig:9}
-\end{figure}
+
 
 Inputs: This module intakes 8-bits of data from the button board.
 \newline\newline
@@ -164,27 +143,33 @@ Description: The module is built from a case statement that looks at what button
 
 \subsection{Frequency Mux}
 
-\begin{figure}[h]
     \includegraphics[width=6 in]{./Images/DiagramsYang/keyDec.png}
-    \caption{Key Decoder}
-    \label{fig:10}
-\end{figure}
+
+
+Inputs: keyFreqIn from the KeyDecoder module and bbFreqIn from the bLUT1 module;
+\newline\newline
+Outputs: dataOut${_fm}$;
+\newline\newline
+Description: This multiplexer takes the output from the KeyDecoder (keyDecOutData) and the output from bLUT1 module (buttons), which are both binary values; then it selects one between the two to pass straight through the output  (dataOut${_fm}$). When the 1-bit input whichFreqOut is ‘0’, the keyboard data is being passed; and when it is ‘1’, the button board data is being passed. The output goes to keyLUT which determines the binary value of the frequency being displayed on the seven segment. 
 
 
 \subsection{Board Mux}
 
-\begin{figure}[h]
-    \includegraphics[width=6 in]{./Images/DiagramsYang/keyDec.png}
-    \caption{Key Decoder}
-    \label{fig:11}
-\end{figure}
+
+    \includegraphics[width=6 in]{./Images/jackPictures/boardMUX.png}
+
+Inputs: This module intakes 9 bits representing a decimal frequency value from both the keyboard and the button board. It also intakes a select value.
+\newline\newline
+Outputs: This module outputs 9 bits representing a decimal frequency value.
+\newline\newline
+Description: The module is built from a case statement that determines which frequency value gets sent to the 7-segment display decoder, based on what the input type is active.
 
 
 \subsection{Signal Generator Top Level}
 
 \begin{figure}[h]
     \includegraphics[width=6 in]{./Images/chasePictures/sigTopMod.png}
-    \caption{keyDec}
+    \caption{sigGenTopLevel}
     \label{fig:12}
 \end{figure}
 
@@ -217,26 +202,19 @@ The signal look-up table submodule takes the slow clock as an input and outputs 
 Our solution was to write a program in C++ to generate the verilog code. The code from that file was then copied and pasted into our program. The C++ code that generated said code is included below.
 
 
-\subsection{Sync}
-
-\begin{figure}[h]
-    \includegraphics[width=6 in]{./Images/DiagramsYang/keyDec.png}
-    \caption{Sync}
-    \label{fig:15}
-\end{figure}
-
-
-
-
 \subsection{System Clock}
 
 \begin{figure}[h]
-    \includegraphics[width=6 in]{./Images/DiagramsYang/keyDec.png}
+    \includegraphics[width=6 in]{./Images/DiagramsYang/sysClk.png}
     \caption{Sync}
     \label{fig:16}
 \end{figure}
 
-
+Inputs: reset;
+\newline\newline
+Outputs: clkValue;
+\newline\newline
+Description: This module accesses the FPGA’s chip oscillator and generate the 2.08 MHz system clock output.
 
 
 \subsection{Free State Machine}
@@ -247,8 +225,128 @@ Our solution was to write a program in C++ to generate the verilog code. The cod
     \label{fig:17}
 \end{figure}
 
+nputs: This module intakes a clock value, in the design the clock is set to the FPGA’s oscillating frequency of 2.08MHz.
+\newline\newline
+Outputs: This module outputs a 3-bit state value.
+\newline\newline
+Description: This module cycles through four different states, one for each digit that can be displayed on the 7-segment display, with the initial state set to the first digit. On the rising edge of the clock value, the state is changed which changes the digit which is illuminated on the display.
+
 
 \section{Appendix}
+
+\subsection{Code}
+
+\begin{enumerate}
+
+\item Top Module
+
+    \includegraphics[width=6 in]{./Images/Archive/1-TopMod1.png}
+
+    \includegraphics[width=6 in]{./Images/Archive/1-TopMod2.png}
+
+    \includegraphics[width=6 in]{./Images/Archive/1-TopMod3.png}
+
+    \includegraphics[width=6 in]{./Images/Archive/1-TopMod4.png}
+
+
+\item Register
+
+
+    \includegraphics[width=6 in]{./Images/Archive/2-Register.png}
+
+
+\item Key Decoder
+
+
+    \includegraphics[width=6 in]{./Images/Archive/3-KeyDecoder.png}
+
+
+\item Key LUT
+
+\includegraphics[width=6 in]{./Images/Archive/4-KeyLUT.png}
+
+\item Button LUT 1 
+
+\includegraphics[width=6 in]{./Images/Archive/5-BLUT1.png}
+
+\item Button LUT 2
+
+\includegraphics[width=6 in]{./Images/Archive/6-BLUT2.png}
+
+\item Button Frequency Mux
+
+\includegraphics[width=6 in]{./Images/Archive/7-FrequencyMux.png}
+
+\item Board Mux
+
+\includegraphics[width=6 in]{./Images/Archive/8-BoardMux.png}
+
+\item Signal Top Level
+
+\includegraphics[width=6 in]{./Images/Archive/9-SignalTopLevel.png}
+
+\item Signal Clock Divider
+
+\includegraphics[width=6 in]{./Images/Archive/9-SignalTopLevel.png}
+
+
+\item Signal LUT
+
+\includegraphics[width=6 in]{./Images/Archive/11-SignalLUT.png}
+
+\item System Clock
+
+\includegraphics[width=6 in]{./Images/Archive/13-SystemClock.png}
+
+\item State Machine
+
+\includegraphics[width=6 in]{./Images/Archive/14-StateMachine.png}
+
+\item Parser
+
+\includegraphics[width=6 in]{./Images/Archive/15-Parser.png}
+
+\item Main Mux
+
+\includegraphics[width=6 in]{./Images/Archive/16-MainMux.png}
+
+\item Segment Decoder
+
+\includegraphics[width=6 in]{./Images/Archive/17-SegmentDecoder.png}
+
+\end{enumerate}
+
+\subsection{Testing}
+
+\begin{enumerate}
+
+\item Signal Generator
+
+\includegraphics[width=6 in]{./Images/chasePictures/SIgnalLUTSimulation.PNG}
+
+\includegraphics[width=6 in]{./Images/chasePictures/SignalGeneratorSimulation.PNG}
+
+\includegraphics[width=6 in]{./Images/chasePictures/SignalClockDividerSimulation.PNG}
+
+\includegraphics[width=6 in]{./Images/chasePictures/SignalGeneratorSimulationSine.PNG}
+
+\item Segment Decoder
+
+\includegraphics[width=6 in]{./Images/boardMuxSimulation.PNG}
+
+\includegraphics[width=6 in]{./Images/freqMuxSimulation.PNG}
+
+\includegraphics[width=6 in]{./Images/freqMuxSimulationDo.PNG}
+
+\includegraphics[width=6 in]{./Images/boardMuxSimulationDo.PNG}
+
+
+
+
+
+\end{enumerate}
+
+
 
 \bibliographystyle{ieeetr}
 \bibliography{sample}
