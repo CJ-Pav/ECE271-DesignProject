@@ -16,11 +16,9 @@ All internal variables:
 	logic regReset;
 	//sysClk
 	logic sysClkReset;      //use this for signalgenerater as well
-	logic clkValue;
-	//2.08MHz CLK
-	logic oscClk;  // goes to Chase's signalgenerator
+	logic clkValue;        
 	//register
-	logic [10:0] regOutData; 
+	logic [10:0] regOutData;
 	//keyDecoder
 	logic [8:0] keyDecOutData;
 	//bLUT1
@@ -44,6 +42,8 @@ All internal variables:
 	logic [2:0] state; 
 	//mainMux
 	logic [3:0] displayDigit;
+	
+	
 //------------------------------------------------------------------------//
 	//logic keyClk2;
 	//logic regReset;
@@ -60,14 +60,7 @@ All internal variables:
 		.clkValue(clkValue), //output 
 		.reset(sysClkReset)
 	);
-//------------------------------------------------------------------------//
-	//logic oscClk;
-	OSCH #("2.08") osc_int (		//2.08 MHz CLK
-									//Other clock frequencies can be found in the MachX02's documentation
-			.STDBY(1'b0),			//Specifies active state
-			.OSC(oscClk),			//Outputs clock signal to 'clk' net
-			.SEDSTDBY() 
-	);								//Leaves SEDSTDBY pin unconnected
+
 //------------------------------------------------------------------------//	
 	//logic [10:0] regOutData;
 	register r (
@@ -104,7 +97,7 @@ All internal variables:
 	signalgenerator sg(
 		.keys(dataOut_fm),
 		.reset(sysClkReset),
-		.clk(oscClk), //2.08 MHz CLK
+		.clk(clkValue), //2.08 MHz CLK
 		.signal(signal)
 	);
 	
