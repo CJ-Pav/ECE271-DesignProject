@@ -1,8 +1,7 @@
 // 2.08 MHz Clock
 
 module sysClk(
-    output logic clkValue,
-    input logic reset
+        output logic clkValue,
     );
     
     logic clk;

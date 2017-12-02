@@ -19,4 +19,5 @@ module bLUT1(
 			'b00001000: buttons = 'b000001000; //Key8
 			'b10000000: buttons = 'b000001001; //Key9 (pause)
 		endcase
+		
 endmodule

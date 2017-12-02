@@ -1,7 +1,7 @@
 // sync module
 
 module sync (
-    input logic keyClk1, sysClk,
+    input logic keyClk1, sysClk, reset,
     output logic keyClk2, regReset
     );
 
@@ -11,6 +11,7 @@ module sync (
     assign keyClk2 = keyClk1;
 	
     always_ff @ (posedge sysClk) begin
+        if
         if(regReset) begin
             count <= 0;
         end
