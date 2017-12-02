@@ -18,9 +18,9 @@ All internal variables:
 	logic sysClkReset;      //use this for signalgenerater as well
 	logic clkValue;
 	//2.08MHz CLK
-	logic oscClk;
+	logic oscClk;  // goes to Chase's signalgenerator
 	//register
-	logic [10:0] regOutData;
+	logic [10:0] regOutData; 
 	//keyDecoder
 	logic [8:0] keyDecOutData;
 	//bLUT1
@@ -44,8 +44,6 @@ All internal variables:
 	logic [2:0] state; 
 	//mainMux
 	logic [3:0] displayDigit;
-	
-	
 //------------------------------------------------------------------------//
 	//logic keyClk2;
 	//logic regReset;
