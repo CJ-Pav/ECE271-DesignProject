@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{High Level}{}% 2
+\BOOKMARK [1][-]{section.3}{Input Boards}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{PS2 Keyboard}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Button Board}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Modules}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Top Module}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Register}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Keyboard Decoder}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{ Key Look Up Table }{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Button Look Up Table 1}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Button Look Up Table 2}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.7}{Frequency Mux}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.8}{Board Mux}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.9}{Signal Generator Top Level}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.10}{Signal Clock Divider}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.11}{Signal Look Up Table}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.12}{Sync}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.13}{System Clock}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.14}{Free State Machine}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 21

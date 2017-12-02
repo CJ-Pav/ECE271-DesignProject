@@ -1,0 +1,63 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{ShumanNotes}[2009/08/11]
+
+%% load up the fancy box making package
+\RequirePackage{fancybox}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\usepackage{hyperref}
+\RequirePackage[letterpaper, portrait]{geometry}
+\RequirePackage{fancyhdr}
+
+%% now reset the headers and footers
+\fancyhead{}
+\fancyfoot{}
+% Header/footer Thickness
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Warning Box with 2 parameters. Param 1: Picture, Param2: Text
+\newcommand{\warning}[2]{\begin{table}[ht!tbp]
+\begin{center}
+\begin{tabular}{c c}
+
+#1 \hspace{5mm} & \framebox{\parbox[r]{4in}{#2}} \\ [3ex]
+\end{tabular}
+\end{center}
+\end{table}}
+
+\newcommand{\doublespace}{\newline \newline}
+
+% Side by Side Pictures Param1: Graphic insert, Param2: Caption for Graphic1, Param3:Label for Graphic1, Param4: Graphic insert, Param5:Caption for Graphic2, Param6:Graphic2 label
+\newcommand{\picsidebyside}[6]{\begin{figure}[ht]            
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+#1
+\caption{#2}
+\label{#3}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+#4 
+\caption{#5}
+\label{#6}
+\end{minipage}
+\end{figure}}
+
+% Center Image Command
+\newcommand{\centerimage}[3]{
+\begin{figure}[ht!]  
+\begin{center}
+#1
+\caption{#2}
+\label{#3}
+\end{center}
+\end{figure}}
+%% bring the style into effect
+\pagestyle{fancy}
+
+\cfoot{ECE 271 Notes}
+ 
+%%
+%% End of file `ShumanNotes.sty`
