@@ -8,8 +8,8 @@
 // will have to write state logic, for the most part this should just be a mux (case(state))
 
 module KeyDecoder(
-	input logic [10:0] keyDecInData, //raw keyboard data
-	output logic [8:0] keyDecOutData //display value for parser
+		input logic [10:0] keyDecInData, //raw keyboard data
+		output logic [8:0] keyDecOutData //display value for parser
 	);
 	
 	always_comb

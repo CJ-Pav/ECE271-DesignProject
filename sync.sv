@@ -11,14 +11,18 @@ module sync (
     assign keyClk2 = keyClk1;
 	
     always_ff @ (posedge sysClk) begin
-        if
-        if(regReset) begin
+        if(reset) begin
+            if(!regReset) begin
+                regReset <= reset;
+            end
+            else begin
+                regReset <= 0;
+            end
             count <= 0;
         end
         else begin
             count <= count + 1;
         end
-        regReset <= 0;
     end
 
 endmodule
