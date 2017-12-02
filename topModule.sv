@@ -51,7 +51,8 @@ All internal variables:
 		.regReset(regReset), //output
 		.keyClk2(keyClk2), //output 
 		.keyClk1(keyClk), 
-		.sysClk(clkValue)
+		.sysClk(clkValue),
+		.reset(sysClkReset)
 	);
 //------------------------------------------------------------------------//
 	//logic sysClkReset
