@@ -43,6 +43,13 @@ All internal variables:
 	//mainMux
 	logic [3:0] displayDigit;
 	
+
+//------------------------------------------------------------------------//
+OSCH #("2.08") osc_int (
+        .STDBY(1'b0),
+        .OSC(clkValue),
+        .SEDSTDBY()
+        );
 	
 //------------------------------------------------------------------------//
 	//logic keyClk2;
@@ -52,13 +59,6 @@ All internal variables:
 		.keyClk2(keyClk2), //output 
 		.keyClk1(keyClk), 
 		.sysClk(clkValue)
-	);
-//------------------------------------------------------------------------//
-	//logic sysClkReset
-	//logic clkValue;
-	sysClk sysClkMod (
-		.clkValue(clkValue), //output 
-		.reset(sysClkReset)
 	);
 
 //------------------------------------------------------------------------//	
