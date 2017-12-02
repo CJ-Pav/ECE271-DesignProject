@@ -3,9 +3,8 @@
 module topModule (
 	input logic ps2data, // 1 byte input from PS2, one at a time
 	input logic keyClk,  
-	input logic [7:0] buttonBoard,
-	//input logic sysClk, 
-    	//output logic [6:0] segments,
+	input logic [7:0] buttonBoard, 
+	output logic [6:0] segments,
 	output logic [7:0] signal
 );
 
@@ -16,10 +15,8 @@ All internal variables:
 	logic keyClk2;
 	logic regReset;
 	//sysClk
-	logic sysClkReset;
-	logic clkValue;
-	//2.08MHz CLK
-	logic oscClk;
+	logic sysClkReset;      //use this for signalgenerater as well
+	logic clkValue;        
 	//register
 	logic [10:0] regOutData;
 	//keyDecoder
@@ -30,7 +27,6 @@ All internal variables:
 	logic whichFreqOut;
 	logic [8:0] dataOut_fm;
 	//signalgenerator
-	logic signalGeneratorReset;
 	logic signalGeneratorClk;
 	//keyLUT
 	logic [8:0] keys;
@@ -58,20 +54,13 @@ All internal variables:
 		.sysClk(clkValue)
 	);
 //------------------------------------------------------------------------//
-	//logic sysClkReset;
+	//logic sysClkReset
 	//logic clkValue;
 	sysClk sysClkMod (
-		.reset(sysClkReset), 
-		.clkValue(clkValue) //output 
+		.clkValue(clkValue), //output 
+		.reset(sysClkReset)
 	);
-//------------------------------------------------------------------------//
-	//logic oscClk;
-	OSCH #("2.08") osc_int (		//2.08 MHz CLK
-									//Other clock frequencies can be found in the MachX02's documentation
-			.STDBY(1'b0),			//Specifies active state
-			.OSC(oscClk),			//Outputs clock signal to 'clk' net
-			.SEDSTDBY() 
-	);								//Leaves SEDSTDBY pin unconnected
+
 //------------------------------------------------------------------------//	
 	//logic [10:0] regOutData;
 	register r (
@@ -96,7 +85,7 @@ All internal variables:
 //------------------------------------------------------------------------//
 	//logic whichFreqOut;
 	//logic [8:0] dataOut_fm;
-	freqMux fm (
+	freqMux fm ( 
 		.keyFreqIn_fm(keyDecOutData),
 		.bbFreqIn_fm(buttons),
 		.dataOut_fm(dataOut_fm),
@@ -107,8 +96,8 @@ All internal variables:
 	//logic signalGeneratorReset;
 	signalgenerator sg(
 		.keys(dataOut_fm),
-		.reset(signalGeneratorReset),
-		.clk(oscClk), //2.08 MHz CLK
+		.reset(sysClkReset),
+		.clk(clkValue), //2.08 MHz CLK
 		.signal(signal)
 	);
 	
@@ -162,6 +151,11 @@ All internal variables:
 		.hundreds(hundreds),
 		.tens(tens),
 		.ones(ones)
+	);
+//------------------------------------------------------------------------//
+	segDecoder sd(
+		.displayIn(displayDigit),
+		.segs(segments)
 	);
 
 endmodule
