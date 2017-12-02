@@ -58,7 +58,8 @@ OSCH #("2.08") osc_int (
 		.regReset(regReset), //output
 		.keyClk2(keyClk2), //output 
 		.keyClk1(keyClk), 
-		.sysClk(clkValue)
+		.sysClk(clkValue),
+		.reset(sysClkReset)
 	);
 
 //------------------------------------------------------------------------//	
